@@ -10,11 +10,6 @@ body {
   line-height: 1.55;
 }
 
-.bio {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .page {
   max-width: 800px;
   margin: 0 auto;
