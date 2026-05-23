@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   background: #ffffff;
-  color: #666666;
+  color: #555555;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.55;
 }
@@ -58,18 +58,10 @@ a:hover {
   align-items: center;
 }
 
-.profile-photo {
-  width: 100%;
-  max-width: 620px;
-  height: auto;
-  display: block;
-  margin: 0 auto 30px;
-}
-
 .bio {
   max-width: 620px;
   margin: 0 auto;
-  text-align: left;
+  text-align: justify;
 }
 
 .bio p {
@@ -77,10 +69,18 @@ a:hover {
   margin-bottom: 1.05rem;
 }
 
+.profile-photo {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+  margin: 28px auto 0;
+}
+
 .section {
   max-width: 620px;
   margin: 34px auto 0;
-  text-align: left;
+  text-align: justify;
 }
 
 h2 {
@@ -113,14 +113,14 @@ h2 {
     margin-right: 8px;
   }
 
-  .profile-photo {
-    width: 100%;
-    max-width: 620px;
-    margin-bottom: 24px;
-  }
-
   .bio,
   .section {
     max-width: 100%;
+  }
+
+  .profile-photo {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
   }
 }
