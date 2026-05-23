@@ -11,7 +11,7 @@ body {
 }
 
 .page {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 36px 24px 60px;
 }
@@ -26,11 +26,11 @@ body {
 h1 {
   margin: 0;
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1 a {
-  color: #111111;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -43,7 +43,8 @@ nav a {
 }
 
 a {
-  color: #005ea8;
+  color: inherit;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -52,16 +53,22 @@ a:hover {
 }
 
 .intro {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  column-gap: 34px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-photo {
   width: 220px;
   height: auto;
   display: block;
+  margin: 0 auto 30px;
+}
+
+.bio {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .bio p {
@@ -70,31 +77,30 @@ a:hover {
 }
 
 .section {
-  margin-top: 34px;
+  max-width: 620px;
+  margin: 34px auto 0;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.15rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0 0 12px;
-}
-
-.links {
-  margin-top: 34px;
-  font-size: 0.95rem;
-}
-
-.links a {
-  margin-right: 16px;
+  color: #444444;
 }
 
 @media (max-width: 680px) {
+  html {
+    font-size: 17px;
+  }
+
   .page {
     padding: 28px 20px 48px;
   }
 
   .topbar {
     display: block;
+    text-align: center;
   }
 
   nav {
@@ -102,16 +108,17 @@ h2 {
   }
 
   nav a {
-    margin-left: 0;
-    margin-right: 16px;
-  }
-
-  .intro {
-    display: block;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .profile-photo {
-    width: 220px;
+    width: 200px;
     margin-bottom: 24px;
+  }
+
+  .bio,
+  .section {
+    max-width: 100%;
   }
 }
