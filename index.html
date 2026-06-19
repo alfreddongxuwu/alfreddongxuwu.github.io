@@ -10,41 +10,33 @@
 
 <body>
   <main class="page">
-
     <header class="topbar">
-      <h1>
-        <a href="/"><strong>Dongxu Wu</strong></a>
-      </h1>
+      <a class="identity" href="/" aria-label="Dongxu Wu, home">
+        <span class="identity-mark" aria-hidden="true"></span>
+        <span>Dongxu Wu</span>
+      </a>
 
-      <nav>
-        <a href="cv.pdf">CV</a>
-        <a href="Research">Research</a>
+      <nav aria-label="Primary navigation">
+        <a class="nav-button" href="cv.pdf">CV</a>
+        <a class="nav-button" href="Research">Research</a>
       </nav>
     </header>
 
-    <section class="intro">
-
-      <img
-        class="profile-photo"
-        src="photo.jpg"
-        alt="Profile photo of Dongxu Wu"
-      >
+    <section class="intro" aria-labelledby="intro-heading">
+      <h1 id="intro-heading" class="visually-hidden">About Dongxu Wu</h1>
 
       <div class="bio">
-
-        <p>
+        <p class="lede">
           I am a senior majoring in Linguistics at
           <a href="https://linguistics.osu.edu/">The Ohio State University</a>.
           My research interests include experimental and computational semantics and pragmatics, as well as linguistic representations in large language models.
         </p>
 
-        <p>
+        <p class="contact">
           Contact: wu.6734 [at] osu [dot] edu
         </p>
-        
       </div>
     </section>
-
   </main>
 </body>
 </html>
