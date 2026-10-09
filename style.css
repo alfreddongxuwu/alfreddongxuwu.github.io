@@ -1,18 +1,7 @@
-@font-face {
-  font-family: "DM Sans";
-  src: url("fonts/DM-Sans-Variable.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 100 1000;
-  font-display: swap;
-}
-
 :root {
   color: #1f2933;
   background: #ffffff;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  font-family: Arial, sans-serif;
 }
 
 * {
@@ -32,7 +21,8 @@ body {
 
 .page {
   display: flex;
-  width: 40vw;
+  width: 36rem;
+  max-width: 86%;
   min-height: 100vh;
   margin: 0 auto;
   align-items: flex-start;
@@ -81,11 +71,15 @@ h1 {
 }
 
 p {
-  margin: 0.4px 0;
+  margin: 0;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+.profile-body p + p {
+  margin-top: 8px;
 }
 
 .research-interest,
@@ -106,8 +100,7 @@ p {
 .profile-photo {
   float: right;
   display: block;
-  width: 14.4rem;
-  max-width: calc(100% - 1.5rem);
+  width: 40%;
   height: auto;
   aspect-ratio: 2223 / 1782;
   margin: 0 0 0 1.5rem;
@@ -116,7 +109,6 @@ p {
 
 @media (max-width: 900px) {
   .page {
-    width: 86vw;
     padding: 48px 0 2rem;
   }
 }
@@ -132,7 +124,6 @@ p {
   }
 
   .profile-photo {
-    max-width: 47.5%;
     margin-left: 1rem;
   }
 }
