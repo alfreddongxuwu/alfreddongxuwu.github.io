@@ -35,43 +35,75 @@ body {
   width: 100%;
 }
 
-.profile-introduction {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 32%;
-  grid-template-areas:
-    "name photo"
-    "introduction photo";
-  column-gap: 1.5rem;
-  align-items: start;
-  margin-bottom: 1rem;
+.profile-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  grid-area: name;
-  margin: 0 0 1.5rem;
+  margin: 0;
   color: #16202a;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
+  white-space: nowrap;
+}
+
+.profile-sections {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  color: #52606d;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.profile-sections [aria-current="page"] {
+  color: #16202a;
+  font-weight: 700;
+}
+
+.profile-introduction {
+  display: flow-root;
+  margin-bottom: 1rem;
 }
 
 p {
   margin: 0 0 1rem;
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   line-height: 1.55;
 }
 
+p a {
+  color: #1d4f76;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+p a:hover {
+  color: #123b5a;
+}
+
+p a:focus-visible {
+  outline: 2px solid #1d4f76;
+  outline-offset: 3px;
+}
+
 .introduction {
-  grid-area: introduction;
   margin-bottom: 0;
 }
 
 .profile-photo {
-  grid-area: photo;
+  float: right;
   display: block;
-  width: 100%;
+  width: 32%;
   height: auto;
-  border-radius: 6px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 10px;
 }
 
 .profile > p:last-child {
@@ -86,15 +118,27 @@ p {
 }
 
 @media (max-width: 600px) {
-  .profile-introduction {
-    grid-template-columns: minmax(0, 1fr) 38%;
-    grid-template-areas:
-      "name photo"
-      "introduction introduction";
-    gap: 1.25rem;
+  .profile-header,
+  .profile-sections {
+    gap: 0.5rem;
   }
 
   h1 {
-    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+
+  .profile-photo {
+    width: 38%;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.125rem;
+  }
+
+  .profile-sections {
+    gap: 0.25rem;
   }
 }
