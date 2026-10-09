@@ -100,11 +100,17 @@ p {
   outline-offset: 3px;
 }
 
+.profile-photos {
+  display: grid;
+  gap: 16px;
+}
+
 .profile-photo {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 2223 / 1782;
+  object-fit: cover;
   border-radius: 10px;
 }
 
