@@ -21,7 +21,7 @@ body {
 
 .page {
   display: flex;
-  width: 36rem;
+  width: 54rem;
   max-width: 86%;
   min-height: 100vh;
   margin: 0 auto;
@@ -67,19 +67,22 @@ h1 {
 }
 
 .profile-body {
-  display: flow-root;
+  display: grid;
+  grid-template-columns: 40% minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem;
 }
 
 p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.2px;
 }
 
 .profile-body p + p {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .research-interest,
@@ -98,12 +101,10 @@ p {
 }
 
 .profile-photo {
-  float: right;
   display: block;
-  width: 40%;
+  width: 100%;
   height: auto;
   aspect-ratio: 2223 / 1782;
-  margin: 0 0 0 1.5rem;
   border-radius: 10px;
 }
 
@@ -123,8 +124,8 @@ p {
     font-size: 1.25rem;
   }
 
-  .profile-photo {
-    margin-left: 1rem;
+  .profile-body {
+    gap: 1rem;
   }
 }
 
