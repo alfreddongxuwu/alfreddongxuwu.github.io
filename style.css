@@ -23,7 +23,7 @@ body {
 
 .page {
   display: flex;
-  width: min(33.333vw, 42rem);
+  width: 40vw;
   min-height: 100vh;
   margin: 0 auto;
   align-items: center;
@@ -31,16 +31,70 @@ body {
   text-align: left;
 }
 
+.profile {
+  width: 100%;
+}
+
+.profile-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32%;
+  grid-template-areas:
+    "name photo"
+    "introduction photo";
+  column-gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
 h1 {
-  margin: 0;
+  grid-area: name;
+  margin: 0 0 1.5rem;
   color: #16202a;
-  font-size: clamp(1.7rem, 2.1vw, 2.25rem);
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
+p {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.introduction {
+  grid-area: introduction;
+  margin-bottom: 0;
+}
+
+.profile-photo {
+  grid-area: photo;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.profile > p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .page {
-    width: min(86vw, 42rem);
+    width: 86vw;
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-introduction {
+    grid-template-columns: minmax(0, 1fr) 38%;
+    grid-template-areas:
+      "name photo"
+      "introduction introduction";
+    gap: 1.25rem;
+  }
+
+  h1 {
+    margin-bottom: 0;
   }
 }
