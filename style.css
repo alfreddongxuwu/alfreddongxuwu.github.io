@@ -75,8 +75,8 @@ h1 {
 
 p {
   margin: 0;
-  font-size: 15px;
-  font-weight: 450;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.25px;
 }
@@ -87,7 +87,7 @@ p {
 
 .research-interest,
 .adviser-link {
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .profile a {
