@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   align-items: flex-start;
-  padding: 24px 0 3rem;
+  padding: 48px 0 3rem;
   text-align: left;
 }
 
@@ -72,20 +72,24 @@ h1 {
 }
 
 p {
-  margin: 0;
-  font-size: 1.25rem;
+  margin: 0.3px 0;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 1.8;
-  letter-spacing: 0.5px;
+  line-height: 36px;
+  letter-spacing: 0.3px;
 }
 
-p a {
+.research-interest {
+  font-weight: 750;
+}
+
+.profile a {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
 
-p a:focus-visible {
+.profile a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
@@ -102,7 +106,7 @@ p a:focus-visible {
 @media (max-width: 900px) {
   .page {
     width: 86vw;
-    padding: 24px 0 2rem;
+    padding: 48px 0 2rem;
   }
 }
 
