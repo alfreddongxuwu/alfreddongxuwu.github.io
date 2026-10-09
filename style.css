@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DM-Sans-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
 :root {
   color: #1f2933;
   background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -72,21 +81,21 @@ h1 {
 }
 
 p {
-  margin: 0.3px 0;
+  margin: 0.4px 0;
   font-size: 1rem;
   font-weight: 500;
   line-height: 36px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
-.research-interest {
+.research-interest,
+.adviser-link {
   font-weight: 750;
 }
 
 .profile a {
   color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+  text-decoration: none;
 }
 
 .profile a:focus-visible {
@@ -97,8 +106,10 @@ p {
 .profile-photo {
   float: right;
   display: block;
-  width: 40%;
+  width: 14.4rem;
+  max-width: calc(100% - 1.5rem);
   height: auto;
+  aspect-ratio: 2223 / 1782;
   margin: 0 0 0 1.5rem;
   border-radius: 10px;
 }
@@ -121,7 +132,7 @@ p {
   }
 
   .profile-photo {
-    width: 47.5%;
+    max-width: 47.5%;
     margin-left: 1rem;
   }
 }
