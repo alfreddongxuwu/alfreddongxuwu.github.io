@@ -70,7 +70,7 @@ h1 {
   display: grid;
   grid-template-columns: 30% minmax(0, 1fr);
   align-items: start;
-  gap: 1.5rem;
+  gap: 40px;
 }
 
 p {
@@ -82,12 +82,12 @@ p {
 }
 
 .profile-body p + p {
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .research-interest,
 .adviser-link {
-  font-weight: 750;
+  font-weight: 650;
 }
 
 .profile a {
