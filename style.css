@@ -68,7 +68,7 @@ h1 {
 
 .profile-body {
   display: grid;
-  grid-template-columns: 40% minmax(0, 1fr);
+  grid-template-columns: 30% minmax(0, 1fr);
   align-items: start;
   gap: 1.5rem;
 }
