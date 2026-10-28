@@ -57,7 +57,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   align-items: flex-start;
-  padding: 72px 0 3rem;
+  padding: 64px 0 3rem;
   text-align: left;
 }
 
@@ -141,7 +141,7 @@ p {
 
 @media (max-width: 900px) {
   .page {
-    padding: 72px 0 2rem;
+    padding: 64px 0 2rem;
   }
 }
 
