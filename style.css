@@ -99,14 +99,14 @@ h1 {
 
 .profile-body {
   display: grid;
-  grid-template-columns: 30% minmax(0, 1fr);
+  grid-template-columns: 20% minmax(0, 1fr);
   align-items: start;
   gap: 54px;
 }
 
 p {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.25px;
