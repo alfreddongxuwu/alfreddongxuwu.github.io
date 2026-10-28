@@ -1,7 +1,39 @@
+@font-face {
+  font-family: "Bitstream Charter";
+  src: url("fonts/charter/charter_regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitstream Charter";
+  src: url("fonts/charter/charter_bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitstream Charter";
+  src: url("fonts/charter/charter_italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitstream Charter";
+  src: url("fonts/charter/charter_bold_italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
   color: #1f2933;
   background: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: "Bitstream Charter", Charter, Georgia, serif;
 }
 
 * {
@@ -76,7 +108,7 @@ h1 {
 p {
   margin: 0;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.25px;
 }
@@ -87,7 +119,7 @@ p {
 
 .research-interest,
 .adviser-link {
-  font-weight: 550;
+  font-weight: 700;
 }
 
 .profile a {
