@@ -1,0 +1,150 @@
+:root {
+  color: #404040;
+  background: #ffffff;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.page {
+  display: flex;
+  width: min(42rem, calc(100% - 2rem));
+  min-height: 100vh;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 64px 0 3rem;
+  text-align: left;
+}
+
+.profile {
+  width: 100%;
+  min-width: 0;
+}
+
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 48px;
+}
+
+h1 {
+  margin: 0;
+  color: #404040;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.profile-sections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1.25rem;
+  color: #808080;
+  font-size: 20px;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.profile-sections [aria-current="page"] {
+  color: #404040;
+  font-weight: 700;
+}
+
+.profile-body {
+  display: block;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.profile-body p + p {
+  margin-top: 16px;
+}
+
+.research-list {
+  margin: 0;
+  padding-left: 2rem;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.research-list > li::marker {
+  content: "[" counter(list-item) "] ";
+}
+
+.research-list > li + li {
+  margin-top: 16px;
+}
+
+.research-interest {
+  font-weight: 700;
+}
+
+.profile a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile .adviser-link {
+  font-weight: 700;
+}
+
+.profile a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.profile-gallery {
+  display: grid;
+  gap: 48px;
+  margin-top: 36px;
+}
+
+.profile-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding: 64px 0 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-header,
+  .profile-sections {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .profile-sections {
+    gap: 0.25rem;
+  }
+}
